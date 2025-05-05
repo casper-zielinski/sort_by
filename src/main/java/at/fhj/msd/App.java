@@ -10,6 +10,8 @@ import at.fhj.msd.contact.ContactByLastNameComparator;
 import at.fhj.msd.contact.ContactByStreetComparator;
 import at.fhj.msd.contact.ContactWithAddress;
 import at.fhj.msd.contact.ContactByHouseNumberComparator;
+import at.fhj.msd.contact.ContactByPlaceComparator;
+
 
 /**
  * Hello world!
@@ -52,6 +54,12 @@ contacts.add(new ContactWithAddress("Dexter", "Morgan", new Address("Miami 1", "
 
         System.out.println("Sorting by house number:");
         contacts.sort(new ContactByHouseNumberComparator());
+        for (Contact contact : contacts) {
+            System.out.println(contact);
+        }
+
+        System.out.println("Sorting by place name:");
+        contacts.sort(new ContactByPlaceComparator());
         for (Contact contact : contacts) {
             System.out.println(contact);
         }
