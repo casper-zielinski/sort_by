@@ -16,10 +16,11 @@ A: I added an additional method that takes a boolean and depending of the Value 
 ## Reflection Questions 2
 
 - What should be the generic parameter if you want to compare any contact with this comparator?  
-A:
+A: Object or Contact
 
 - What would an additional comparator look like that sorts the contacts by the house number that is part of the street?  
-A:
+A: He would need to Split the String Street and take the second attribute and compare on that.
+![Example](resources/images/Example.png)
 
 - Why would Comparator\<Address> be wrong for this use case?  
-A:
+A: Address has no conection to Contact, It just serves as a Info Attriubte

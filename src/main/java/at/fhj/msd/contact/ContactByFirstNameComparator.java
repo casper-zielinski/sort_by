@@ -1,8 +1,6 @@
-package at.fhj.msd;
+package at.fhj.msd.contact;
 
 import java.util.Comparator;
-
-import at.fhj.msd.contact.Contact;
 
 public class ContactByFirstNameComparator implements Comparator<Contact> {
     @Override

@@ -14,4 +14,8 @@ public class ContactWithAddress extends Contact {
       public String toString() {
             return this.lastname +", " + this.firstname +", " + this.address + "\n" ;
       }
+
+      public Address getAddress() {
+            return address;
+      }
 }
